@@ -1,11 +1,11 @@
 // app.js
 
 const express = require('express');
-const connectDB = require('../config/db.js');
+const connectDB = require('./config/db');
 var cors = require('cors');
 
 // routes
-const books = require('../routes/api/books.js');
+const books = require('./routes/api/books');
 
 const app = express();
 
