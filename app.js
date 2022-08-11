@@ -18,12 +18,11 @@ app.use(cors({ origin: true, credentials: true }));
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-
 // use Routes
 app.use('/api/books', books);
 
 
-
+//Path Module
 const path = require("path");
 
 //Serving the build folder. This acts as the middleware.
